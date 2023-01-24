@@ -28,5 +28,3 @@ Submit via your Drexel email account to your instructor email account, subject: 
 In the body of your email message put:
 - A link to your responsive web page
 - i.e. http://jervo.org/idm240/hwk01/ 
-
-*Email set to send at 1/23/23 11:50PM*
