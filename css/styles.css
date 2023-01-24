@@ -1,0 +1,40 @@
+/* Define global styles */
+:root {
+  --link-color: #ff0000;
+  --visited-link-color: #fff000;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+  width: 100%;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  padding: 3rem;
+  width: 70%;
+
+  background-color: aliceblue;
+}
+
+/* Headings */
+/* h1, h2 {
+  
+} */
+
+/* Anchor */
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--visited-link-color);
+}
