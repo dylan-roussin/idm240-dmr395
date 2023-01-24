@@ -59,13 +59,18 @@ body {
 
 main {
   /* margin: 1rem 0; */
-  padding-top: 7rem;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
+  
+}
+
+.title-container {
+  /* display: flex; */
+  text-align: center;
 }
 
 #title {
@@ -79,13 +84,61 @@ main {
 .content-wrapper {
   display: flex;
   flex-flow: column nowrap;
-  background-color: aliceblue;
-  width: 80%;
-  padding: 3rem;
+  background-color: rgb(245, 245, 245);
+  width: 83%;
+  padding: 11rem 7rem 7rem 7rem;
+}
+
+.image-container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+
 }
 
 .image-container img {
-  width: 30%;
+  max-width: 30%;
+  min-width: 24%;
+  padding: 1rem;
+  align-self: flex-start;
+}
+
+.text-split {
+  display: flex;
+  justify-content: center;
+  /* margin: 0rem; */
+}
+
+.text-split div {
+  padding: 2rem;
+}
+
+.top-section {
+  padding-top: 1rem;
+}
+
+.left-half {
+  width: 60%;
+}
+
+.left-half div {
+  padding: 0;
+  margin: 0;
+}
+
+.left-half h3 {
+  color: rgb(214, 0, 0);
+}
+
+#links {
+  /* display: flex; */
+  /* margin: 0 1rem; */
+  justify-content: center;
+}
+
+#links div {
+  /* padding: 0 5rem; */
 }
 
 /* Anchor */
