@@ -7,7 +7,6 @@
 :root {
   --main-color: rgb(7, 7, 7);
   --secondary-color: rgb(214, 0, 0);
-  
   --link-color: #ff0000;
   --visited-link-color: #620000;
 }
@@ -31,9 +30,7 @@ header {
   position: fixed;
   text-align: center;
   box-shadow: 0 1px 25px rgba(0, 0, 0, .1);
-  background: repeating-radial-gradient(circle at center,
-        rgb(25, 51, 153) 0 10%,
-        rgb(218, 0, 0) 10% 20%); 
+  background: repeating-radial-gradient(circle at center, rgb(25, 51, 153) 0 10%, rgb(218, 0, 0) 10% 20%);
   transition: all .28s ease;
   z-index: 100;
   top: 0;
@@ -58,23 +55,25 @@ body {
 }
 
 main {
-  /* margin: 1rem 0; */
+  /* margin: 1rem 0;
+     */
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  
 }
 
 .title-container {
-  /* display: flex; */
+  /* display: flex;
+     */
   text-align: center;
 }
 
 .title-container h2 {
-  /* display: flex; */
+  /* display: flex;
+     */
   text-align: center;
   margin-top: 0.8rem;
 }
@@ -127,13 +126,13 @@ main {
 .image-wrapper h2 {
   position: relative;
   left: 6rem;
-
 }
 
 .text-split {
   display: flex;
   justify-content: center;
-  /* margin: 0rem; */
+  /* margin: 0rem;
+     */
 }
 
 .text-split div {
@@ -153,7 +152,6 @@ main {
 
 .left-half {
   width: 80%;
-  
 }
 
 #location {
@@ -161,7 +159,8 @@ main {
 }
 
 #dates {
-  /* padding-top: 1rem; */
+  /* padding-top: 1rem;
+     */
 }
 
 #dates h2 {
@@ -194,10 +193,13 @@ main {
   margin: 0.8rem 0;
 }
 
-/* #links div { */
-  /* padding: 0 5rem; */
-/* } */
-
+/* #links div {
+     */
+/* padding: 0 5rem;
+     */
+/* 
+}
+ */
 /* Anchor */
 a {
   color: var(--link-color);
@@ -213,132 +215,138 @@ a:visited {
     width: 95%;
   }
 
-    @media only screen and (max-width : 1362px) {
-      h1 {
-        font-size: 1.8rem;
-      }
-}
+  @media only screen and (max-width : 1362px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
 
-    @media only screen and (max-width : 1335px) {
-      .top-section {
-        padding-top: 1rem;
-        padding: 0 9rem;
-      }
+  @media only screen and (max-width : 1335px) {
+    .top-section {
+      padding-top: 1rem;
+      padding: 0 9rem;
+    }
+  }
+
+  @media only screen and (max-width : 1105px) {
+    .content-wrapper {
+      width: 100%
     }
 
-    @media only screen and (max-width : 1105px) {
-      .content-wrapper {
-        width: 100%
+    .top-section {
+      padding-top: 1rem;
+      padding: 0 5rem;
     }
-        .top-section {
-          padding-top: 1rem;
-          padding: 0 5rem;
-        }
   }
 
+  @media only screen and (max-width : 963px) {
+    h1 {
+      font-size: 1.6rem;
+    }
 
-@media only screen and (max-width : 963px) {
-  h1 {
-    font-size: 1.6rem;
-  }
-
-  h2 {
-    font-size: 1.2rem;
-  }
+    h2 {
+      font-size: 1.2rem;
+    }
 
     h3 {
       font-size: 1rem;
     }
-        .top-section {
-          padding-top: 1rem;
-          padding: 0 1rem;
-        }
-}
 
-@media only screen and (max-width : 883px) {
-  .image-wrapper h2 {
-    left: 4rem;
-  }
-}
-
-
-@media only screen and (max-width : 687px) {
-  #title {
-    font-size: 3rem;
-  }
-  .content-wrapper {
-    padding: 11rem 0rem 7rem 0rem;
-   
-  }
-  .text-split {
-    flex-flow: row nowrap;
-    display: block;
+    .top-section {
+      padding-top: 1rem;
+      padding: 0 1rem;
+    }
   }
 
-  #links {
-    flex-flow: row nowrap;
-    align-self: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+  @media only screen and (max-width : 883px) {
+    .image-wrapper h2 {
+      left: 4rem;
+    }
   }
+
+  @media only screen and (max-width : 687px) {
+    #title {
+      font-size: 3rem;
+    }
+
+    .content-wrapper {
+      padding: 11rem 0rem 7rem 0rem;
+    }
+
+    .text-split {
+      flex-flow: row nowrap;
+      display: block;
+    }
+
+    #links {
+      flex-flow: row nowrap;
+      align-self: center;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+
     #links div {
       margin: 0;
       padding: 0rem 2.5rem 1.5rem 2rem;
     }
 
     .top-section {
-      /* padding: 0rem 1rem; */
+      /* padding: 0rem 1rem;
+             */
       width: 100%;
     }
 
-  .left-half {
-    /* flex-flow: row nowrap; */
-    align-self: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
+    .left-half {
+      /* flex-flow: row nowrap;
+             */
+      align-self: center;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
     .left-half div {
-      /* flex-flow: row nowrap; */
+      /* flex-flow: row nowrap;
+             */
       padding: 0rem;
       margin: 0;
     }
-  #location {
-    width: 100%;
-  }
 
-  .image-wrapper {
-    width: 100%;
-  }
-  .image-container {
-    flex-flow: column nowrap;
-    width: 100%;
-    
-  }
-  .image-container img {
-      max-width: 90%;
-      align-self: center;
-  }
-    .image-container-sm {
-      flex-flow: column nowrap;
-
+    #location {
       width: 100%;
     }
+
+    .image-wrapper {
+      width: 100%;
+    }
+
+    .image-container {
+      flex-flow: column nowrap;
+      width: 100%;
+    }
+
+    .image-container img {
+      max-width: 90%;
+      align-self: center;
+    }
+
+    .image-container-sm {
+      flex-flow: column nowrap;
+      width: 100%;
+    }
+
     .image-container-sm img {
       max-width: 90%;
       align-self: center;
+    }
+
+    .image-wrapper h2 {
+      position: initial;
+      text-align: center;
+      /* left: 2.5rem;
+             */
+      font-size: 1.8rem;
+    }
   }
-
-  .image-wrapper h2 {
-    position:initial;
-    text-align: center;
-    /* left: 2.5rem; */
-    font-size: 1.8rem;
-  }
-  
 }
-
-
-}
-
