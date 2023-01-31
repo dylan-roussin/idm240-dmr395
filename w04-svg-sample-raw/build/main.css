@@ -1,26 +1,53 @@
 /*Mobile First*/
 
 body {
-
+  background-color: #666;
 }
 
 #wrapper {
-
+  width: 320px;
+  margin: 10px auto;
 }
 
+@keyframes sway {
+  0% {
+    transform: rotate(8deg);
+  }
+
+  50% {
+    transform: rotate(-8deg);
+  }
+
+  100% {
+    transform: rotate(8deg);
+  }
+}
+
+#hand {
+  fill: orange;
+  animation: sway 2.4s infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: bottom;
+
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* 
+#shield {
+  cursor: pointer;
+} 
+*/
+
+#svgObj {
+  cursor: pointer;
+}
 
 /*Tablet*/
 
-@media screen and (min-width : 768px) {
-
-}
+@media screen and (min-width : 768px) {}
 
 
 /*Desktop*/
 
-@media screen and (min-width : 1024px) {
-
-}
-
-
-
+@media screen and (min-width : 1024px) {}
