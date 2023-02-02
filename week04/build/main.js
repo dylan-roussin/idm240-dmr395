@@ -11,7 +11,7 @@ hsObjSVG.addEventListener("load", function () {
   // * Put SVG content xml document into JS variable
   svgConDoc = hsObjSVG.contentDocument;
 
-  // * Put SVG sheild ID in JS variable
+  // * Put SVG shield ID in JS variable
   // shieldObj = svgConDoc.getElementById("shield");
   // shieldObj.addEventListener("click", toggleHandOpacity);
 
