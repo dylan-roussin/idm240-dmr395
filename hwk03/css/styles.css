@@ -33,26 +33,25 @@ object {
 }
 
 /* svg specific interactions */
-#brownObj {
-}
+#brownObj {}
 
-#textSvg {
-}
+#textSvg {}
 
-#ampSvg {
-}
+#ampSvg {}
 
-#doughnutPink {
-}
+#doughnutPink {}
 
-/* Single column at 480w and below */
-@media (max-width: 480px) {
+/* Single column at 320w and below */
+@media (max-width: 479px) {
   main {
-    height: 100%; /* Displays grid from top, prevents it from getting cut off  */
+    height: 100%;
+    overflow: visible;
+    /* Displays grid from top, prevents it from getting cut off  */
   }
 
   .image-container {
     grid-template-columns: 1fr;
+    /* max-width: 5rem; */
   }
 
   .image-item {
@@ -60,17 +59,26 @@ object {
   }
 }
 
-/* Two columns at 768w */
-@media (min-width: 481px) and (max-width: 768px) {
+/* Two columns */
+@media (min-width: 480px) and (max-width: 767px) {
   .image-container {
     grid-template-columns: 1fr 1fr;
+    max-width: 30rem;
   }
 }
 
-/* Three columns at 1280w and higher */
-@media (min-width: 769px) {
+/* Three columns at 768w */
+@media (min-width: 768px) and (max-width: 1279px) {
   .image-container {
     grid-template-columns: 1fr 1fr 1fr;
+    max-width: 60rem;
+  }
+}
+
+/* Four  columns at 1280w and higher */
+@media (min-width: 1280px) {
+  .image-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     max-width: 60rem;
   }
 }
