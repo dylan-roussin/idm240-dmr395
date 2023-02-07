@@ -1,7 +1,6 @@
 //
 // * Connect JS vars with SVG id's
 //
-
 const doughnutBrownSVG = document.getElementById("doughnutBrownSVG");
 const textSVG = document.getElementById("textSVG");
 const ampSVG = document.getElementById("ampSVG");
@@ -27,7 +26,8 @@ doughnutBrownSVG.addEventListener("load", function () {
   svgObj.addEventListener("click", handleBrown);
 
   // Define paths to interact with JS
-  brownObj = svgConDoc.getElementById("hand2");
+  brownSvgObj = svgConDoc.getElementById("brownSvgObj");
+  brownSprinklesObj = svgConDoc.getElementsByClassName('sprinkles');
 });
 
 // * Baker's dozen text
@@ -75,11 +75,11 @@ doughnutPinkSVG.addEventListener("load", function () {
 
 handleBrown = () => {
   // alert("handleBrown called");
-  if (brownObj.style.opacity == 0.5) {
-    brownObj.style.opacity = 1;
-  } else {
-    brownObj.style.opacity = 0.5;
-  }
+  brownSvgObj.classList.remove('pop'); // reset animation
+  // brownSprinklesObj.classList.remove('popper');
+  void brownSvgObj.offsetWidth; // trigger reflow
+  brownSvgObj.classList.add('pop');
+  // brownSprinklesObj.classList.add('popper');
 };
 
 handleText = () => {
