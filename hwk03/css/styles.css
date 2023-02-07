@@ -98,10 +98,6 @@ object {
 
 
 /* svg specific */
-/* #brownFill {
-  animation: pop 0.8s;
-} */
-
 .spin {
   animation: spin 1s ease-out;
 }
@@ -122,13 +118,6 @@ object {
 .scaleme {
   animation: scaleme 0.5s ease-in-out;
 }
-
-
-#textSvg {}
-
-#ampSvg {}
-
-#doughnutPink {}
 
 /* Single column at 320w and below */
 @media (max-width: 479px) {
