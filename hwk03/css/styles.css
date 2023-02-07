@@ -10,7 +10,7 @@ main {
   width: 100%;
 }
 
-img {
+object {
   width: 100%;
 }
 
@@ -27,6 +27,19 @@ img {
   max-width: 30rem;
   margin: 1rem 0;
   cursor: pointer;
+}
+
+/* svg specific interactions */
+#doughnutBrown {
+}
+
+#textSvg {
+}
+
+#ampSvg {
+}
+
+#doughnutPink {
 }
 
 /* Single column at 480w and below */
