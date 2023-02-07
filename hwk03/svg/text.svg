@@ -3,7 +3,7 @@
 <?xml-stylesheet type="text/css" href="../css/styles.css"?> 
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
  "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+<svg version="1.0" id='textSvgObj' class='svgObj' xmlns="http://www.w3.org/2000/svg"
  width="341.000000pt" height="255.000000pt" viewBox="0 0 341.000000 255.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>

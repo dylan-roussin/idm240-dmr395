@@ -28,13 +28,12 @@ object {
   margin: 1rem 0;
 }
 
-#brownSvgObj {
+.svgObj {
   cursor: pointer;
 }
 
 /* svg specific interactions */
-#doughnutBrown {
-  cursor: pointer;
+#brownObj {
 }
 
 #textSvg {
