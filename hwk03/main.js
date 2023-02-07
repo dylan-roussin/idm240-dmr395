@@ -26,6 +26,7 @@ doughnutBrownSVG.addEventListener("load", function () {
   const svgObj = svgConDoc.getElementById("brownSvgObj");
   svgObj.addEventListener("click", handleBrown);
 
+  // Define paths to interact with JS
   brownObj = svgConDoc.getElementById("hand2");
 });
 
@@ -38,6 +39,7 @@ textSVG.addEventListener("load", function () {
   const svgObj = svgConDoc.getElementById("textSvgObj");
   svgObj.addEventListener("click", handleText);
 
+  // Define paths to interact with JS
   textObj = svgConDoc.getElementById("hand");
 });
 
@@ -50,6 +52,7 @@ ampSVG.addEventListener("load", function () {
   const svgObj = svgConDoc.getElementById("ampSvgObj");
   svgObj.addEventListener("click", handleAmp);
 
+  // Define paths to interact with JS
   ampObj = svgConDoc.getElementById("hand");
 });
 
@@ -62,6 +65,7 @@ doughnutPinkSVG.addEventListener("load", function () {
   const svgObj = svgConDoc.getElementById("pinkSvgObj");
   svgObj.addEventListener("click", handlePink);
 
+  // Define paths to interact with JS
   pinkObj = svgConDoc.getElementById("Path_804");
 });
 
@@ -70,37 +74,37 @@ doughnutPinkSVG.addEventListener("load", function () {
 //
 
 handleBrown = () => {
-  alert("handleBrown called");
-  if (handObj.style.opacity == 0.5) {
-    handObj.style.opacity = 1;
+  // alert("handleBrown called");
+  if (brownObj.style.opacity == 0.5) {
+    brownObj.style.opacity = 1;
   } else {
-    handObj.style.opacity = 0.5;
+    brownObj.style.opacity = 0.5;
   }
 };
 
 handleText = () => {
-  alert("handleText called");
-  if (hand2Obj.style.opacity == 0.5) {
-    hand2Obj.style.opacity = 1;
+  // alert("handleText called");
+  if (textObj.style.opacity == 0.5) {
+    textObj.style.opacity = 1;
   } else {
-    hand2Obj.style.opacity = 0.5;
+    textObj.style.opacity = 0.5;
   }
 };
 
 handleAmp = () => {
-  alert("handleAmp called");
-  if (hand2Obj.style.opacity == 0.5) {
-    hand2Obj.style.opacity = 1;
+  // alert("handleAmp called");
+  if (ampObj.style.opacity == 0.5) {
+    ampObj.style.opacity = 1;
   } else {
-    hand2Obj.style.opacity = 0.5;
+    ampObj.style.opacity = 0.5;
   }
 };
 
 handlePink = () => {
-  alert("handlePink called");
-  if (hand2Obj.style.opacity == 0.5) {
-    hand2Obj.style.opacity = 1;
+  // alert("handlePink called");
+  if (pinkObj.style.opacity == 0.5) {
+    pinkObj.style.opacity = 1;
   } else {
-    hand2Obj.style.opacity = 0.5;
+    pinkObj.style.opacity = 0.5;
   }
 };
