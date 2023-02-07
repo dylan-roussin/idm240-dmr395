@@ -56,18 +56,73 @@ object {
   }
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes fill-dat {
+  0% {
+    fill: #000;
+  }
+
+  100% {
+    fill: #ff0000;
+  }
+}
+
+@keyframes scaleme {
+  0% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 70%;
+  }
+
+  90% {
+    scale: 110%;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+
+
 /* svg specific */
 /* #brownFill {
   animation: pop 0.8s;
 } */
+
+.spin {
+  animation: spin 1s ease-out;
+}
 
 .pop {
   animation: pop 0.8s ease-in-out;
 }
 
 .popper {
-  animation: popper 0.8s;
+  animation: popper 0.8s ease-in-out;
 }
+
+.yellow {
+  fill: #fff000;
+  transition: 0.5s ease-in;
+}
+
+.scaleme {
+  animation: scaleme 0.5s ease-in-out;
+}
+
 
 #textSvg {}
 
