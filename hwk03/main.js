@@ -132,6 +132,11 @@ handleAmp = () => {
 
 handlePink = () => {
   // alert("handlePink called");
-  pinkObj.classList.toggle("yellow");
+  pinkObj.classList.remove("yellow");
+  pinkObj.classList.remove("pink");
+  setTimeout(() => {
+    pinkObj.contentDocument.getElementById("pinkSvgObj").classList.add("yellow");
+    pinkObj.contentDocument.getElementById("pinkSvgObj").classList.add("pink");
+  }, 100);
 };
 

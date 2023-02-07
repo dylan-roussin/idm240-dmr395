@@ -113,6 +113,11 @@ object {
   animation: popper 0.8s ease-in-out;
 }
 
+.pink {
+  fill: #ef6060;
+  transition: 0.5s ease-in;
+}
+
 .yellow {
   fill: #fff000;
   transition: 0.5s ease-in;
