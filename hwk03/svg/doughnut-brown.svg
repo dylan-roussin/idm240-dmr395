@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Link to external css file -->
+<?xml-stylesheet type="text/css" href="../css/styles.css"?> 
+
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg height="300px" width="300px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+<svg height="300px" width="300px" version="1.1" id="brownSvgObj" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 	 viewBox="0 0 336.242 336.242" xml:space="preserve">
 <g>
 	<path style="fill:#FDD44B;" d="M227.8,138.588c0-8.026-23.803-20.161-59.68-20.161c-35.876,0-59.678,12.135-59.678,20.161
@@ -66,7 +69,7 @@
 		<path style="fill:#CE593F;" d="M153.739,68.579c0.174,0.006,0.347,0,0.521,0.019C154.085,68.579,153.914,68.585,153.739,68.579z"
 			/>
 	</g>
-	<path style="fill:#3F2D20;" d="M242.842,138.588c0-10.641-8.644-20.062-24.338-26.527c-13.581-5.595-31.474-8.675-50.383-8.675
+	<path id="hand" style="fill:#3F2D20;" d="M242.842,138.588c0-10.641-8.644-20.062-24.338-26.527c-13.581-5.595-31.474-8.675-50.383-8.675
 		s-36.802,3.081-50.381,8.675c-15.695,6.465-24.339,15.887-24.339,26.527c0,10.642,8.644,20.062,24.339,26.528
 		c13.58,5.594,31.472,8.674,50.381,8.674c18.911,0,36.804-3.081,50.383-8.674C234.198,158.65,242.842,149.23,242.842,138.588z
 		 M220.001,147.598c-13.611-5.935-32.368-9.326-51.881-9.326c-19.513,0-38.269,3.39-51.881,9.325

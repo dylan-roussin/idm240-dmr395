@@ -26,11 +26,15 @@ object {
   width: 100%;
   max-width: 30rem;
   margin: 1rem 0;
+}
+
+#brownSvgObj {
   cursor: pointer;
 }
 
 /* svg specific interactions */
 #doughnutBrown {
+  cursor: pointer;
 }
 
 #textSvg {
