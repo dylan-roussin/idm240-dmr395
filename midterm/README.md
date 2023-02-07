@@ -6,4 +6,5 @@ File names for your midterm images should be in this filename format: idm240s###
 
 Put all midterm images into one folder. Folder name should be in this format: idm240s\_###midterm_dmr395 [replace ### with your class section number, replace jwt23 with your Drexel email account prefix.
 
+Don't send the zip as an email attachment.
 Zip midterm folder and upload to your web site.
