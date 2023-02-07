@@ -14,7 +14,7 @@ let ampObj;
 let pinkObj;
 
 //
-// * addEvent listeners to every SVG
+// * addEventListener for every SVG
 //
 
 // * Brown doughnut
@@ -40,7 +40,7 @@ textSVG.addEventListener("load", function () {
   svgObj.addEventListener("click", handleText);
 
   // Define paths to interact with JS
-  textObj = svgConDoc.getElementById("hand");
+  textObj = svgConDoc.getElementById("textObj");
 });
 
 // * Guitar amp
@@ -53,7 +53,7 @@ ampSVG.addEventListener("load", function () {
   svgObj.addEventListener("click", handleAmp);
 
   // Define paths to interact with JS
-  ampObj = svgConDoc.getElementById("hand");
+  ampObj = svgConDoc.getElementById("ampObj");
 });
 
 // * Pink doughnut
