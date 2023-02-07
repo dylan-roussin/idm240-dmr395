@@ -1,0 +1,59 @@
+/* import svg using object tag, make sure all SVG are 300w x 300h */
+/* Adjustments due Thursday at 12 (? check the recording for due data) */
+
+/* Repeated styles */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.image-container {
+  display: grid;
+  grid-gap: 0rem 1rem;
+  justify-items: center;
+  width: 100%;
+  margin: 0 2rem;
+}
+
+.image-item {
+  width: 100%;
+  max-width: 30rem;
+  margin: 1rem 0;
+}
+
+/* Single column at 480w and below */
+@media (max-width: 480px) {
+  main {
+    height: 100%; /* Displays grid from top, prevents it from getting cut off  */
+  }
+
+  .image-container {
+    grid-template-columns: 1fr;
+  }
+
+  .image-item {
+    max-width: 38rem;
+  }
+}
+
+/* Two columns at 768w */
+@media (min-width: 481px) and (max-width: 768px) {
+  .image-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Three columns at 1280w and higher */
+@media (min-width: 769px) {
+  .image-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 60rem;
+  }
+}
