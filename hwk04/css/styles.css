@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Arial Black';
-  src: url(/fonts/ariblk.ttf);
+  src: url(../fonts/ariblk.ttf);
 }
 
 * {
@@ -112,25 +112,13 @@ footer {
 
 .falling {
   position: relative;
-  animation: fall 3s linear infinite;
-  top: -100px;
+  top: 100px;
   left: -135px;
   width: 100px;
   height: 100px;
   z-index: 1;
 }
 
-.falling:nth-of-type(1) {
-  animation: fall 3s linear infinite 0s;
-}
-
-.falling:nth-of-type(2) {
-  animation: fall 3s linear infinite 0.8s;
-}
-
-.falling:nth-of-type(3) {
-  animation: fall 3s linear infinite 2s;
-}
 
 .divider {
   background-color: #8a0909;
@@ -179,7 +167,7 @@ footer {
   position: relative;
   bottom: -20px;
   left: 650px;
-  animation: beltan 10s linear infinite;
+  transform: skewY(25deg);
 }
 
 #the-down {
@@ -193,29 +181,6 @@ object {
 
 .svgObj {
   cursor: pointer;
-}
-
-@keyframes beltan {
-  0% {
-    transform: translate(500px, 0px) skewY(25deg);
-  }
-
-  100% {
-    transform: translate(-550px, 0px) skewY(25deg);
-  }
-
-
-}
-
-@keyframes fall {
-  0% {
-    transform: translate(0, -50px) rotate(0deg);
-
-  }
-
-  100% {
-    transform: translate(0, 600px) rotate(360deg);
-  }
 }
 
 @keyframes spin {
