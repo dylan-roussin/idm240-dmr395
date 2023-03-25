@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="main.js" defer></script>
+    <title>The Baker's Dozen</title>
+  </head>
+
+  <body>
+    <main>
+      <audio src="simple.mp3" id="myAudio"></audio>
+      <div class="top">
+        <div class="image-item">
+          <object
+            onclick="toggleAudio()"
+            id="ampSVG"
+            class="line"
+            data="svg/guitaramp.svg"
+            type="image/svg+xml"
+            width="80"
+            height="80">
+            <img src="svg/guitaramp.svg" height="100" width="100" />
+          </object>
+        </div>
+        <div class="title">
+          <h1>PHISH</h1>
+          <div class="image-item">
+            <object
+              id="textSVG"
+              data="svg/text.svg"
+              type="image/svg+xml"
+              width="200"
+              height="200">
+              <img src="svg/text.svg" height="200" width="200" />
+            </object>
+          </div>
+        </div>
+
+        <div class="tubes">
+          <div class="tube"></div>
+          <object
+            id="doughnutPinkSVG"
+            class="falling"
+            data="svg/doughnut-pink.svg"
+            type="image/svg+xml"
+            width="320"
+            height="320">
+            <img src="svg/doughnut-pink.svg" height="320" width="320" />
+          </object>
+          <div class="tube"></div>
+          <object
+            id="doughnutPinkSVG"
+            class="falling"
+            data="svg/doughnut-pink.svg"
+            type="image/svg+xml"
+            width="320"
+            height="320">
+            <img src="svg/doughnut-pink.svg" height="320" width="320" />
+          </object>
+          <div class="tube"></div>
+          <object
+            id="doughnutPinkSVG"
+            class="falling"
+            data="svg/doughnut-pink.svg"
+            type="image/svg+xml"
+            width="320"
+            height="320">
+            <img src="svg/doughnut-pink.svg" height="320" width="320" />
+          </object>
+        </div>
+      </div>
+
+      <div class="divider">
+        <div class="headline">
+          <h2 id="the-down" class="upper">The</h2>
+          <div>
+            <h2 class="upper">Baker's Dozen</h2>
+            <h2 id="date">July 21 - August 6, 2017</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="belt">
+        <div class="image-item">
+          <object
+            id="doughnutBrownSVG"
+            data="svg/doughnut-brown.svg"
+            type="image/svg+xml"
+            width="100"
+            height="100">
+            <img src="svg/doughnut-brown.svg" height="100" width="100" />
+          </object>
+        </div>
+      </div>
+      <footer>
+        <p>© Copyright Phish</p>
+      </footer>
+    </main>
+  </body>
+</html>
