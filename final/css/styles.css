@@ -1,0 +1,495 @@
+@font-face {
+  font-family: 'Arial Black';
+  src: url(/fonts/ariblk.ttf);
+}
+
+* {
+  font-family: sans-serif;
+}
+
+html {
+  background-color: #380000;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.image-item {
+  width: fit-content;
+  height: fit-content;
+}
+
+#ampSVG {
+  /* position: relative; */
+  /* left: 250px; */
+  margin: 0.5rem;
+  width: fit-content;
+  z-index: 5;
+}
+
+.playing {
+  fill: #ffffff;
+}
+
+
+footer {
+  /* text-align: center; */
+  width: 100%;
+  z-index: 10;
+  padding: 0rem 1rem 0rem;
+  color: white;
+}
+
+.top {
+  display: flex;
+  flex-flow: row nowrap;
+  /* min-width: 80%; */
+  background-color: #a03434;
+  /* z-index: -1; */
+  overflow: hidden;
+}
+
+.title {
+  width: fit-content;
+  padding: 0;
+  margin: 2rem 10rem 0 5rem;
+  z-index: 1;
+  overflow: hidden;
+  scrollbar-width: none;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  overflow: visible;
+}
+
+#textSVG::-webkit-scrollbar {
+  display: hidden;
+}
+
+
+.title h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: 'Arial Black';
+  margin: 0;
+}
+
+.tubes {
+  display: flex;
+  flex-flow: row nowrap;
+  /* min-width: 50%; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.tube {
+  /* max-width: 20rem; */
+  width: 10rem;
+  height: 30rem;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  /* position: relative; */
+  opacity: 20%;
+  z-index: 2;
+}
+
+
+.falling {
+  position: relative;
+  animation: fall 3s linear infinite;
+  top: -100px;
+  left: -135px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+
+.falling:nth-of-type(1) {
+  animation: fall 3s linear infinite 0s;
+}
+
+.falling:nth-of-type(2) {
+  animation: fall 3s linear infinite 0.8s;
+}
+
+.falling:nth-of-type(3) {
+  animation: fall 3s linear infinite 2s;
+}
+
+.divider {
+  background-color: #8a0909;
+  transform: skewY(-2deg);
+  position: relative;
+  top: -50px;
+  z-index: 2;
+}
+
+
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.headline h2 {
+  font-family: 'Arial Black';
+  text-shadow: 10px solid pink;
+  margin: 1rem;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+#date {
+  color: white;
+  font-style: italic;
+}
+
+.belt {
+  transform: skewY(-25deg);
+  background-color: gray;
+  width: 70rem;
+  height: 10rem;
+  position: relative;
+  left: 40rem;
+  bottom: 0rem;
+  z-index: 3;
+}
+
+
+#doughnutBrownSVG {
+  position: relative;
+  bottom: -20px;
+  left: 650px;
+  animation: beltan 10s linear infinite;
+}
+
+#the-down {
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+}
+
+object {
+  width: 100%;
+}
+
+.svgObj {
+  cursor: pointer;
+}
+
+@keyframes beltan {
+  0% {
+    transform: translate(500px, 0px) skewY(25deg);
+  }
+
+  100% {
+    transform: translate(-550px, 0px) skewY(25deg);
+  }
+
+
+}
+
+@keyframes fall {
+  0% {
+    transform: translate(0, -50px) rotate(0deg);
+
+  }
+
+  100% {
+    transform: translate(0, 600px) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes popper {
+  0% {
+    transform: translateY(0px);
+  }
+
+  56% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+@keyframes fill-dat {
+  0% {
+    fill: #000;
+  }
+
+  100% {
+    fill: #ff0000;
+  }
+}
+
+@keyframes scaleme {
+  0% {
+    scale: 100%;
+  }
+
+  50% {
+    scale: 70%;
+  }
+
+  90% {
+    scale: 110%;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+
+/* svg specific */
+.spin {
+  animation: spin 1s ease-out;
+}
+
+.pop {
+  animation: pop 0.8s ease-in-out;
+}
+
+.popper {
+  animation: popper 0.8s ease-in-out;
+}
+
+.pink {
+  fill: #ef6060;
+  transition: 0.5s ease-in;
+}
+
+.yellow {
+  fill: #fff000;
+  transition: 0.5s ease-in;
+}
+
+.scaleme {
+  animation: scaleme 0.5s ease-in-out;
+}
+
+/* @media (min-width: 1px) and (max-width: 3px) {
+  main {
+    height: 100%;
+    overflow: visible;
+    /* Displays grid from top, prevents it from getting cut off  
+  }
+} */
+
+@media (max-width: 639px) {
+  .title {
+    /* text-align: center; */
+    margin: 2rem auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 300;
+  }
+
+  #ampSVG {
+    width: 4.5rem;
+    position: absolute;
+    right: 76%;
+    top: 0;
+    /* right: 0; */
+    z-index: 100;
+  }
+
+  .title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  .headline h2 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  #textSVG {
+    padding: 0;
+    margin: 0;
+    /* width: 12rem; */
+  }
+
+  .tubes {
+    position: relative;
+    left: 30px;
+    margin: 0 auto;
+  }
+
+  .tube {
+    width: 5rem;
+  }
+
+  .falling {
+    width: 50px;
+    height: 50px;
+    left: -70px;
+  }
+
+  .belt {
+    left: -9rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 970px) {
+  .title {
+    /* text-align: center; */
+    margin: 2rem auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 300;
+  }
+
+  #ampSVG {
+    position: absolute;
+    right: 85%;
+    top: 0;
+    /* right: 0; */
+    z-index: 100;
+  }
+
+  .title h1 {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  #textSVG {
+    padding: 0;
+    margin: 0;
+    /* width: 12rem; */
+  }
+
+  .tubes {
+    position: relative;
+    left: 40px;
+    margin: 0 auto;
+  }
+
+  .tube {
+    width: 7rem;
+  }
+
+  .falling {
+    width: 80px;
+    height: 80px;
+    left: -100px;
+  }
+
+  .belt {
+    left: 5rem;
+  }
+}
+
+@media (min-width: 971px) and (max-width: 1040px) {
+  .title {
+    margin: 2rem 2rem 0 3rem;
+    z-index: 300;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .tubes {
+    position: relative;
+    right: 0px;
+    padding: 0px;
+  }
+
+  .tube {
+    width: 7rem;
+  }
+
+  .falling {
+    width: 80px;
+    height: 80px;
+    left: -100px;
+  }
+
+  .belt {
+    left: 10rem;
+  }
+}
+
+/* Three columns at 768w */
+@media (min-width: 1041px) and (max-width: 1401px) {
+  .title h1 {
+    font-size: 4rem;
+  }
+
+  .belt {
+    left: 20rem;
+  }
+
+  .tubes {
+    position: relative;
+    right: 100px;
+    padding: 0px;
+  }
+
+  .tube {
+    width: 7rem;
+  }
+
+  .falling {
+    width: 80px;
+    height: 80px;
+    left: -100px;
+  }
+}
+
+/* Four  columns at 1280w and higher */
+@media (min-width: 1401px) {}
